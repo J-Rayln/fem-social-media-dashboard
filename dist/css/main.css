@@ -1,2 +1,82 @@
-:root{--clr-pri-limeGreen:#1db489;--clr-pri-brightRed:#dc414c;--clr-pri-facebook:#198ff5;--clr-pri-twitter:#1ca0f2;--clr-pri-insta-lg:linear-gradient(90deg,#fdc468,#df4996);--clr-pri-insta-lgS:#fdc468;--clr-pri-insta-lgE:#df4996;--clr-pri-youtube:#c4032a;--clr-toggle-drk-lg:linear-gradient(90deg,#378fe6,#3eda82);--clr-toggle-lgt:#aeb3cb;--clr-drk-bg:#1e202a;--clr-drk-topBG:#1f212e;--clr-drk-cardBG:#252a41;--clr-drk-textBlue:#8b97c6;--clr-drk-textWhite:#fff;--clr-lgt-bgWhite:#fff;--clr-lgt-topBG:#f5f7ff;--clr-lgt-cardBG:#f0f2fa;--clr-lgt-textGrayBlue:#63687e;--clr-lgt-textDrkBlue:#1e202a;--ff-body:"Inter",sans-serif;--ff-heading:"Inter",sans-serif;--fs-body:rem(14);--fw-normal:400;--fw-bold:700}html{box-sizing:border-box;font-size:100%}*,:after,:before{box-sizing:inherit}body{font-family:var(--ff-body);margin:0;padding:0}a,a:active,a:visited{text-decoration:none}h1,h2,h3{margin-top:0}
+:root {
+  /* colors */
+  --clr-pri-limeGreen: hsl(163deg, 72%, 41%);
+  --clr-pri-brightRed: hsl(356deg, 69%, 56%);
+  --clr-pri-facebook: hsl(208deg, 92%, 53%);
+  --clr-pri-twitter: hsl(203deg, 89%, 53%);
+  --clr-pri-insta-lg: linear-gradient(to right, hsl(37deg, 97%, 70%), hsl(329deg, 70%, 58%));
+  --clr-pri-insta-lgS: hsl(37deg, 97%, 70%);
+  --clr-pri-insta-lgE: hsl(329deg, 70%, 58%);
+  --clr-pri-youtube: hsl(348deg, 97%, 39%);
+  --clr-toggle-drk-lg: linear-gradient(to right, hsl(210deg, 78%, 56%), hsl(146deg, 68%, 55%));
+  --clr-toggle-lgt: hsl(230deg, 22%, 74%);
+  --clr-drk-bg: hsl(230deg, 17%, 14%);
+  --clr-drk-topBG: hsl(232deg, 19%, 15%);
+  --clr-drk-cardBG: hsl(228deg, 28%, 20%);
+  --clr-drk-textBlue: hsl(228deg, 34%, 66%);
+  --clr-drk-textWhite: hsl(0deg, 0%, 100%);
+  --clr-lgt-bgWhite: hsl(0deg, 0%, 100%);
+  --clr-lgt-topBG: hsl(225deg, 100%, 98%);
+  --clr-lgt-cardBG: hsl(227deg, 47%, 96%);
+  --clr-lgt-textGrayBlue: hsl(228deg, 12%, 44%);
+  --clr-lgt-textDrkBlue: hsl(230deg, 17%, 14%);
+  /* typography */
+  --ff-body: "Inter", sans-serif;
+  --ff-heading: "Inter", sans-serif;
+  --fs-body: 0.875rem;
+  --fs-h1: clamp(1.5rem, 1.21rem + 1.03vw, 1.75rem);
+  --fs-h2: 1.25rem;
+  --fs-h3: 0.875rem;
+  --fw-normal: 400;
+  --fw-bold: 700;
+}
+
+/*
+    reset & global boilerplate styles
+*/
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--ff-body);
+  font-size: var(--fs-body);
+}
+
+a, a:visited, a:active {
+  text-decoration: none;
+}
+
+h1, h2, h3 {
+  margin-top: 0;
+}
+
+h1 {
+  font-size: var(--fs-h1);
+}
+
+h1 {
+  font-size: var(--fs-h2);
+}
+
+h3 {
+  font-size: var(--fs-h3);
+}
+
+/*
+    utility
+*/
+/*
+    card
+*/
+/*
+    toggle
+*/
 /*# sourceMappingURL=main.css.map */

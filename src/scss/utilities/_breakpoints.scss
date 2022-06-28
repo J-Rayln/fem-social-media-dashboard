@@ -33,3 +33,14 @@ $breakpoints-down: (
         @content;
     }
 }
+
+// container widths
+// 
+// used to set max widths for breakpoints as well as
+// used to build clamp() functions for font sizes where needed
+
+$max-widths: (
+    'sm': 23.75em, // 380px
+    'md': 40em, // 640px
+    'lg': 69.375em, // 1110px
+);

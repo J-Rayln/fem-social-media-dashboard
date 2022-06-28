@@ -21,6 +21,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: var(--ff-body);
+    font-size: var(--fs-body);
 }
 
 a, a:visited, a:active {
@@ -30,3 +31,7 @@ a, a:visited, a:active {
 h1, h2, h3 {
     margin-top: 0;
 }
+
+h1 { font-size: var(--fs-h1); }
+h1 { font-size: var(--fs-h2); }
+h3 { font-size: var(--fs-h3); }

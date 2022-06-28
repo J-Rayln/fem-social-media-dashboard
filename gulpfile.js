@@ -9,10 +9,19 @@ const terser = require('gulp-terser');
 const browsersync = require('browser-sync').create();
 
 // Sass Task
+// function scssTask() {
+//   return src('src/scss/main.scss', { sourcemaps: true })
+//     .pipe(sass())
+//     .pipe(postcss([autoprefixer(), cssnano()]))
+//     .pipe(dest('dist/css', { sourcemaps: '.' }));
+// }
 function scssTask() {
   return src('src/scss/main.scss', { sourcemaps: true })
-    .pipe(sass())
-    .pipe(postcss([autoprefixer(), cssnano()]))
+    .pipe(sass({
+      outputStyle: 'expanded',
+      sourceComments: true
+    }))
+    // .pipe(postcss([autoprefixer(), cssnano()]))
     .pipe(dest('dist/css', { sourcemaps: '.' }));
 }
 
