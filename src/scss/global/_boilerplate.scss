@@ -1,0 +1,32 @@
+@use '../utilities/' as *;
+
+// boilerplate.scss
+// 
+// Basic reset and global styles that apply project-wide
+
+/*
+    reset & global boilerplate styles
+*/
+
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--ff-body);
+}
+
+a, a:visited, a:active {
+    text-decoration: none;
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+}

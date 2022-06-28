@@ -1,0 +1,35 @@
+// breakpoints.scss
+// 
+// This module holds breakpoints and max width values for all containers
+// as well as the media query mixins for use with those variables.
+// 
+// All em values assume 16px = 1em.
+
+
+// for use with 'min-width' media queries
+// based on 640px, 1024px, 1400px values
+$breakpoints-up: (
+    'md':  40em,
+    'lg':  64em,
+    'xl':  87.5em,
+);
+
+@mixin breakpoint($size) {
+    @media (min-width: map-get($breakpoints-up, $size)) {
+        @content;
+    }
+}
+
+// for use with 'max-width' media queries
+// based on 639.98px, 1023.98px, 1299.98px values
+$breakpoints-down: (
+    'sm':  39.99875em,
+    'md':  63.99875em,
+    'lg':  87.49875em,
+);
+
+@mixin breakpoint-down($size) {
+    @media (max-width: map-get($breakpoints-up, $size)) {
+        @content;
+    }
+}

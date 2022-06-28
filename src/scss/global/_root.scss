@@ -1,0 +1,24 @@
+@use '../utilities/' as *;
+
+// root.scss
+// 
+// Builds and stores :root variables 
+
+:root {
+    /* colors */
+    @each $cat, $shades in $colors {
+        @each $shade, $value in $shades {
+            --clr-#{$cat}-#{$shade}: #{$value};
+        }
+    }
+
+    /* typography */
+    @each $property, $maps in $typography {
+        $prefix: map-get($maps, "prefix");
+        $values: map-get($maps, "values");
+
+        @each $key, $value in $values {
+            --#{$prefix}-#{$key}: #{inspect($value)};
+        }
+    }
+}
