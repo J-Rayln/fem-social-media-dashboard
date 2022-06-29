@@ -14,7 +14,7 @@
         border-top: rem(4) solid var(--clr-social-facebook);
 
         .card__username {
-            background-image: url('/images/icon-facebook.svg');
+            background-image: url('../../images/icon-facebook.svg');
             background-repeat: no-repeat;
         }
     }
@@ -23,7 +23,7 @@
         border-top: rem(4) solid var(--clr-social-twitter);
 
         .card__username {
-            background-image: url('/images/icon-twitter.svg');
+            background-image: url('../../images/icon-twitter.svg');
             background-repeat: no-repeat;
         }
     }
@@ -38,7 +38,7 @@
         border-bottom: 0;
 
         .card__username {
-            background-image: url('/images/icon-instagram.svg');
+            background-image: url('../../images/icon-instagram.svg');
             background-repeat: no-repeat;
         }
     }
@@ -47,7 +47,7 @@
         border-top: rem(4) solid var(--clr-social-youtube);
 
         .card__username {
-            background-image: url('/images/icon-youtube.svg');
+            background-image: url('../../images/icon-youtube.svg');
             background-repeat: no-repeat;
         }
     }
@@ -99,12 +99,12 @@
         padding-left: rem(12);
         
         &--up {
-            background-image: url('/images/icon-up.svg');
+            background-image: url('../../images/icon-up.svg');
             color: var(--clr-primary-limeGreen);
         }
 
         &--down {
-            background-image: url('/images/icon-down.svg');
+            background-image: url('../../images/icon-down.svg');
             color: var(--clr-primary-brightRed);
         }
     }
@@ -124,25 +124,25 @@
     line-height: 1;
 
     &--facebook {
-        background-image: url('/images/icon-facebook.svg');
+        background-image: url('../../images/icon-facebook.svg');
         background-repeat: no-repeat;
         background-position: top rem(24) right rem(24);
     }
 
     &--instagram {
-        background-image: url('/images/icon-instagram.svg');
+        background-image: url('../../images/icon-instagram.svg');
         background-repeat: no-repeat;
         background-position: top rem(24) right rem(24);
     }
 
     &--twitter {
-        background-image: url('/images/icon-twitter.svg');
+        background-image: url('../../images/icon-twitter.svg');
         background-repeat: no-repeat;
         background-position: top rem(24) right rem(24);
     }
 
     &--youtube {
-        background-image: url('/images/icon-youtube.svg');
+        background-image: url('../../images/icon-youtube.svg');
         background-repeat: no-repeat;
         background-position: top rem(24) right rem(24);
     }
@@ -182,7 +182,7 @@
             padding-left: rem(12);
             
             &-icon {
-                background-image: url('/images/icon-up.svg');
+                background-image: url('../../images/icon-up.svg');
                 @extend %icon-extend;
             }
         }
@@ -191,7 +191,7 @@
             color: var(--clr-primary-brightRed);
 
             &-icon {
-                background-image: url('/images/icon-down.svg');
+                background-image: url('../../images/icon-down.svg');
                 @extend %icon-extend;
             }
         }
