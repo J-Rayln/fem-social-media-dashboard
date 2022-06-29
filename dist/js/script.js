@@ -1,2 +1,2 @@
-"use strict";console.log("testing the JavaScript file!");
+"use strict";var checkbox=document.getElementById("theme-toggle");checkbox.addEventListener("click",(function(){document.body.classList.toggle("dark"),document.documentElement.setAttribute("color-mode","dark")}));
 //# sourceMappingURL=script.js.map
