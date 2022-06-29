@@ -5,81 +5,67 @@
 */
 
 .toggle {
+    display: flex;
+    justify-content: flex-end;
+    color: var(--clr-text-secondary);
+    font-weight: var(--fw-bold);
 
-    fieldset {
-        border: none;
-    }
-
-    input[type="radio"]:checked .t-toggle__ball {
-        transform: translateX(rem(24));
-    }
-
-    .t-toggle {
-
-        &__wrapper {
-            position: relative;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: var(--clr-bg-toggle);
-            width: rem(50);
-            height: rem(26);
-            padding: rem(5);
-            cursor: pointer;
-            border-radius: rem(50);
-        }
-
-        &__ball {
-            position: absolute;
-            top: 3px;
-            left: 3px;
-            background: var(--clr-bg-body);
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            transition: transform 0.2s linear;
-        }
+    &-text {
+        padding-right: rem(14);
     }
 }
 
-.theme-toggle {
+/*slider switch css */
+.theme-switch-wrapper {
     display: flex;
     align-items: center;
+}
 
-    
-    &__checkbox {
-        opacity: 0;
-        position: absolute;
+.theme-switch {
+    display: inline-block;
+    position: relative;
+    height: rem(34);
+    width: rem(60);
+}
 
-        &:checked + .theme-toggle__checkbox-label .ball {
-            transform: translateX(24px);
-        }
-    }
+.theme-switch input {
+    display: none;
+}
 
-    &__checkbox-label {
-        position: relative;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background: var(--clr-bg-toggle);
-        width: rem(50);
-        height: rem(26);
-        padding: rem(5);
-        cursor: pointer;
-        border-radius: rem(50);
+.slider {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: var(--clr-bg-toggle);
+    cursor: pointer;
+    transition: .4s;
+}
 
-        .ball {
-            position: absolute;
-            top: 3px;
-            left: 3px;
-            background: var(--clr-bg-body);
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            transition: transform 0.2s linear;
-            
-        }
-    }
+.slider:before {
+    content: "";
+    position: absolute;
+    bottom: rem(4);
+    left: rem(4);
+    background-color: var(--clr-bg-body);
+    height: rem(26);
+    width: rem(26);
+    transition: .4s;
+}
 
+input:checked+.slider {
+    background-color: var(--clr-bg-body);
+}
 
+input:checked+.slider:before {
+    transform: translateX(rem(26));
+}
+
+.slider.round {
+    border-radius: rem(34);
+}
+
+.slider.round:before {
+    border-radius: 50%;
 }

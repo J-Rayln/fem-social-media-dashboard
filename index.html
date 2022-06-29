@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" color-mode="light">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -41,31 +41,12 @@
             <span class="header__subtitle">Total Followers: 23,004</span>
         </div>
 
-        <!-- <div class="toggle">
-
-            <fieldset aria-label="theme-switcher" role="radiogroup">
-                <div class="t-toggle">
-                    <label for="light">Light</label>
-                    <span class="t-toggle__wrapper">
-                        <input type="radio" name="theme" id="light" checked>
-                        <input type="radio" name="theme" id="dark">
-                        <span aria-hidden="true" class="t-toggle__bg"></span>
-                        <span aria-hidden="true" class="t-toggle__switcher"></span>
-                        <span class="t-toggle__ball"></span>
-                    </span>
-                    <label for="dark">dark</label>
-                </div>
-            </fieldset>
-
-        </div> -->
-
-        <div class="theme-toggle">
-            <span class="light--hidden">Light Mode</span>
-            <span class="dark--hidden">Dark Mode</span>
-            <div>
-                <input type="checkbox" name="theme-toggle" id="theme-toggle" class="theme-toggle__checkbox">
-                <label for="theme-toggle" class="theme-toggle__checkbox-label">
-                    <span class="ball"></span>
+        <div class="toggle">
+            <div class="theme-switch-wrapper">
+                <span class="toggle-text">Dark Mode</span>
+                <label class="theme-switch" for="checkbox">
+                    <input type="checkbox" id="checkbox" />
+                    <div class="slider round"></div>
                 </label>
             </div>
         </div>
@@ -216,7 +197,7 @@
             </div>
         </section>
     </main>
-    
+
     <div class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
         Coded by <a href="https://github.com/J-Rayln">Michael Morales</a>.
