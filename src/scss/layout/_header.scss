@@ -19,11 +19,17 @@
             color: var(--clr-text-primary);
             margin-bottom: 0;
         }
+
+        @include breakpoint-down(lg) {
+            padding-bottom: rem(28);
+            border-bottom: 1px solid var(--clr-text-secondary);
+            margin-bottom: rem(18);
+        }
     }
 
     &__subtitle {
         color: var(--clr-text-secondary);
         font-weight: var(--fw-bold);
-        margin-top: 0;
+        margin-top: 0; 
     }
 }
