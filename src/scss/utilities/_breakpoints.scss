@@ -1,3 +1,5 @@
+@use 'functions' as *;
+
 // breakpoints.scss
 // 
 // This module holds breakpoints and max width values for all containers
@@ -39,8 +41,12 @@ $breakpoints-down: (
 // used to set max widths for breakpoints as well as
 // used to build clamp() functions for font sizes where needed
 
+$max-width-sm: rem(380);
+$max-width-md: rem(640);
+$max-width-lg: rem(1110);
+
 $max-widths: (
-    'sm': 23.75em, // 380px
-    'md': 40em, // 640px
-    'lg': 69.375em, // 1110px
+    'sm': $max-width-sm,
+    'md': $max-width-md,
+    'lg': $max-width-lg,
 );

@@ -1,0 +1,29 @@
+@use '../utilities/' as *;
+
+/*
+    header
+*/
+
+.header {
+    margin-top: rem(36);
+
+    @include breakpoint(lg) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    &__title {
+
+        h1 {
+            color: var(--clr-text-primary);
+            margin-bottom: 0;
+        }
+    }
+
+    &__subtitle {
+        color: var(--clr-text-secondary);
+        font-weight: var(--fw-bold);
+        margin-top: 0;
+    }
+}

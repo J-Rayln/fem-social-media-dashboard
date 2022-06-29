@@ -1,0 +1,33 @@
+@use '../utilities/' as *;
+
+/*
+    layout utilities
+*/
+
+.container {
+    padding: rem(25);
+    margin: 0 auto rem(46);
+    max-width: $max-width-lg;
+
+    @include breakpoint(lg) {
+        padding: 0;
+    }
+}
+
+// grid classes
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: rem(25);
+
+    @include breakpoint(md) {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: rem(30);
+        row-gap: rem(24);
+    }
+
+    @include breakpoint(lg) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

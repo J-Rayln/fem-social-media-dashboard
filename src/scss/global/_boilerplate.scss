@@ -8,6 +8,16 @@
     reset & global boilerplate styles
 */
 
+/* Any element with the class "light--hidden" will be hidden when the site is set to Light Mode */
+:root[color-mode="light"] .light--hidden {
+    display: none;
+}
+
+/* Any element with the class "dark--hidden" will be hidden when the site is set to Dark Mode */
+:root[color-mode="dark"] .dark--hidden {
+    display: none;
+}
+
 html {
     box-sizing: border-box;
     font-size: 100%;
@@ -18,10 +28,12 @@ html {
 }
 
 body {
-    margin: 0;
-    padding: 0;
+    background-color: var(--clr-bg-body);
+    color: var(--clr-text-primary);
     font-family: var(--ff-body);
     font-size: var(--fs-body);
+    margin: 0;
+    padding: 0;
 }
 
 a, a:visited, a:active {
@@ -33,5 +45,5 @@ h1, h2, h3 {
 }
 
 h1 { font-size: var(--fs-h1); }
-h1 { font-size: var(--fs-h2); }
+h2 { font-size: var(--fs-h2); }
 h3 { font-size: var(--fs-h3); }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" color-mode="light">
 
 <head>
     <meta charset="UTF-8">
@@ -33,37 +33,115 @@
 </head>
 
 <body>
-    <h1>Social Media Dashboard</h1>
 
-    Social Media Dashboard
-    Total Followers: 23,004
+    <header class="header container">
 
-    Dark Mode
+        <div class="header__title">
+            <h1>Social Media Dashboard</h1>
+            <span class="header__subtitle">Total Followers: 23,004</span>
+        </div>
+
+        <!-- <div class="toggle">
+
+            <fieldset aria-label="theme-switcher" role="radiogroup">
+                <div class="t-toggle">
+                    <label for="light">Light</label>
+                    <span class="t-toggle__wrapper">
+                        <input type="radio" name="theme" id="light" checked>
+                        <input type="radio" name="theme" id="dark">
+                        <span aria-hidden="true" class="t-toggle__bg"></span>
+                        <span aria-hidden="true" class="t-toggle__switcher"></span>
+                        <span class="t-toggle__ball"></span>
+                    </span>
+                    <label for="dark">dark</label>
+                </div>
+            </fieldset>
+
+        </div> -->
+
+        <div class="theme-toggle">
+            <span class="light--hidden">Light Mode</span>
+            <span class="dark--hidden">Dark Mode</span>
+            <div>
+                <input type="checkbox" name="theme-toggle" id="theme-toggle" class="theme-toggle__checkbox">
+                <label for="theme-toggle" class="theme-toggle__checkbox-label">
+                    <span class="ball"></span>
+                </label>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <section class="container grid">
+
+            <div class="card card--facebook">
+                <div class="card__username">
+                    &#64;nathanf
+                </div>
+                <div class="card__count card__count--big">
+                    1044
+                    <span class="card__label">
+                        Followers
+                    </span>
+                </div>
+                <div class="card__change card__change--up">
+                    99 Today
+                </div>
+            </div>
+
+            <div class="card card--twitter">
+                <div class="card__username">
+                    &#64;nathanf
+                </div>
+                <div class="card__count card__count--big">
+                    1987
+                    <span class="card__label">
+                        Followers
+                    </span>
+                </div>
+                <div class="card__change card__change--up">
+                    12 Today
+                </div>
+            </div>
+
+            <div class="card card--instagram">
+                <div class="card__username">
+                    &#64;realnathanf
+                </div>
+                <div class="card__count card__count--big">
+                    11k
+                    <span class="card__label">
+                        Followers
+                    </span>
+                </div>
+                <div class="card__change card__change--up">
+                    1099 Today
+                </div>
+            </div>
+
+            <div class="card card--youtube">
+                <div class="card__username">
+                    &#64;Nathan F.
+                </div>
+                <div class="card__count card__count--big">
+                    8239
+                    <span class="card__label">
+                        Subscribers
+                    </span>
+                </div>
+                <div class="card__change card__change--down">
+                    144 Today
+                </div>
+            </div>
+
+        </section>    
+    </main>
 
 
 
-    @nathanf
-    1987
-    Followers
-    12 Today
-
-    @nathanf
-    1044
-    Followers
-    99 Today
-
-    @realnathanf
-    11k
-    Followers
-    1099 Today
-
-    Nathan F.
-    8239
-    Subscribers
-    144 Today
-
-
-
+    <div style="margin-top: 100px;"></div>
+    
     Overview - Today
 
     Page Views
