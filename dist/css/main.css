@@ -84,6 +84,7 @@ h1 {
 
 h2 {
   font-size: var(--fs-h2);
+  margin-bottom: 1.875rem;
 }
 
 h3 {
@@ -93,6 +94,10 @@ h3 {
 /*
     layout utilities
 */
+section {
+  margin-bottom: 3.125rem;
+}
+
 .container {
   padding: 1.5625rem;
   margin: 0 auto 2.875rem;
@@ -216,6 +221,78 @@ h3 {
 .card__change--down {
   background-image: url("/images/icon-down.svg");
   color: var(--clr-primary-brightRed);
+}
+
+.ov-card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 50%);
+  grid-template-areas: "stat stat" "count change";
+  background-color: var(--clr-bg-card);
+  border-radius: 0.3125rem;
+  padding: 1.875rem 1.5rem 1.625rem;
+  height: 7.8125rem;
+  line-height: 1;
+}
+.ov-card--facebook {
+  background-image: url("/images/icon-facebook.svg");
+  background-repeat: no-repeat;
+  background-position: top 1.5rem right 1.5rem;
+}
+.ov-card--instagram {
+  background-image: url("/images/icon-instagram.svg");
+  background-repeat: no-repeat;
+  background-position: top 1.5rem right 1.5rem;
+}
+.ov-card--twitter {
+  background-image: url("/images/icon-twitter.svg");
+  background-repeat: no-repeat;
+  background-position: top 1.5rem right 1.5rem;
+}
+.ov-card--youtube {
+  background-image: url("/images/icon-youtube.svg");
+  background-repeat: no-repeat;
+  background-position: top 1.5rem right 1.5rem;
+}
+.ov-card__stat {
+  grid-area: stat;
+  color: var(--clr-text-secondary);
+  font-size: 0.75rem;
+  font-weight: var(--fw-bold);
+}
+.ov-card__count {
+  grid-area: count;
+  align-self: end;
+  color: var(--clr-text-primary);
+  font-size: 1.5625rem;
+  font-weight: var(--fw-bold);
+}
+.ov-card__change {
+  grid-area: change;
+  align-self: end;
+  text-align: end;
+  font-size: 0.75rem;
+  font-weight: var(--fw-bold);
+}
+.ov-card__change .ov-card__change--down-icon, .ov-card__change .ov-card__change--up-icon {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: left top 0.4375rem;
+  width: 0.75rem;
+  height: 0.875rem;
+}
+.ov-card__change--up {
+  color: var(--clr-primary-limeGreen);
+  padding-left: 0.75rem;
+}
+.ov-card__change--up-icon {
+  background-image: url("/images/icon-up.svg");
+}
+.ov-card__change--down {
+  color: var(--clr-primary-brightRed);
+}
+.ov-card__change--down-icon {
+  background-image: url("/images/icon-down.svg");
 }
 
 /*

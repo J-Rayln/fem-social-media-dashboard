@@ -78,9 +78,6 @@
         &--big {
             font-size: rem(42);
         }
-        &--small {
-
-        }
     }
 
     &__label {
@@ -111,5 +108,92 @@
             color: var(--clr-primary-brightRed);
         }
     }
+}
 
+.ov-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 50%);
+    grid-template-areas: 
+        "stat stat"
+        "count change";
+    background-color: var(--clr-bg-card);
+    border-radius: rem(5);
+    padding: rem(30) rem(24) rem(26);
+    height: rem(125);
+    line-height: 1;
+
+    &--facebook {
+        background-image: url('/images/icon-facebook.svg');
+        background-repeat: no-repeat;
+        background-position: top rem(24) right rem(24);
+    }
+
+    &--instagram {
+        background-image: url('/images/icon-instagram.svg');
+        background-repeat: no-repeat;
+        background-position: top rem(24) right rem(24);
+    }
+
+    &--twitter {
+        background-image: url('/images/icon-twitter.svg');
+        background-repeat: no-repeat;
+        background-position: top rem(24) right rem(24);
+    }
+
+    &--youtube {
+        background-image: url('/images/icon-youtube.svg');
+        background-repeat: no-repeat;
+        background-position: top rem(24) right rem(24);
+    }
+
+    &__stat {
+        grid-area: stat;
+        color: var(--clr-text-secondary);
+        font-size: rem(12);
+        font-weight: var(--fw-bold);
+    }
+
+    &__count {
+        grid-area: count;
+        align-self: end;
+        color: var(--clr-text-primary);
+        font-size: rem(25);
+        font-weight: var(--fw-bold);
+    }
+
+    &__change {
+        grid-area: change;
+        align-self: end;
+        text-align: end;
+        font-size: rem(12);
+        font-weight: var(--fw-bold);
+        
+        %icon-extend {
+            display: inline-block;
+            background-repeat: no-repeat;
+            background-position: left top rem(7);
+            width: rem(12);
+            height: rem(14);
+        }
+
+        &--up {
+            color: var(--clr-primary-limeGreen);
+            padding-left: rem(12);
+            
+            &-icon {
+                background-image: url('/images/icon-up.svg');
+                @extend %icon-extend;
+            }
+        }
+
+        &--down {
+            color: var(--clr-primary-brightRed);
+
+            &-icon {
+                background-image: url('/images/icon-down.svg');
+                @extend %icon-extend;
+            }
+        }
+    }
 }
